@@ -2,8 +2,12 @@
 
 ```sh
 brew tap ivg-design/tap
+brew trust ivg-design/tap
 brew install --cask sidebarfavorites
 ```
+
+`brew trust` is required once: Homebrew asks you to explicitly trust any
+third-party tap before it will load casks from it.
 
 ## Casks
 
