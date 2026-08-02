@@ -16,8 +16,7 @@ cask "sidebarfavorites" do
 
   app "SidebarFavorites Manager.app"
 
-  uninstall quit:      "com.ivg-design.SidebarFavoritesManager",
-            pkgutil:   "com.ivg-design.SidebarFavorites.adv.*"
+  uninstall quit: "com.ivg-design.SidebarFavoritesManager"
 
   zap trash: [
     "~/Library/Application Support/SidebarFavorites",
