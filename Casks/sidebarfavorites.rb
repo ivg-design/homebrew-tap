@@ -1,6 +1,6 @@
 cask "sidebarfavorites" do
-  version "1.1.0"
-  sha256 "ef6dcebf51bbb5920b8fab7253ac001a75d6aba4e013294fef2bb16eca0c84cc"
+  version "1.2.2"
+  sha256 "bb40f484a85595485b815fd733a63acc813745887e77ad9d187aa59be5804b1c"
 
   url "https://github.com/ivg-design/SidebarFavorites/releases/download/v#{version}/SidebarFavorites-#{version}.dmg"
   name "SidebarFavorites Manager"
@@ -16,7 +16,8 @@ cask "sidebarfavorites" do
 
   app "SidebarFavorites Manager.app"
 
-  uninstall quit: "com.ivg-design.SidebarFavoritesManager"
+  uninstall quit:      "com.ivg-design.SidebarFavoritesManager",
+            pkgutil:   "com.ivg-design.SidebarFavorites.adv.*"
 
   zap trash: [
     "~/Library/Application Support/SidebarFavorites",
